@@ -1,9 +1,4 @@
-//
-//  ViewController.m
-//  Example
-//
-//  Created by Jonathan Tribouharet
-//
+
 
 #import "ViewController.h"
 
@@ -53,6 +48,7 @@
 {
     JT3DScrollViewEffect effect;
     switch (sender.selectedSegmentIndex) {
+            
         case 0:
             effect = JT3DScrollViewEffectCards;
             break;
@@ -75,8 +71,7 @@
 
 #pragma mark - Next / Previous buttons
 
-- (IBAction)loadNextPage:(id)sender
-{
+- (IBAction)loadNextPage:(id)sender {
     [self.scrollView loadNextPage:YES];
 }
 
@@ -90,8 +85,7 @@
     [self updateButtons];
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self updateButtons];
 }
 
@@ -124,6 +118,3 @@
 }
 
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com
