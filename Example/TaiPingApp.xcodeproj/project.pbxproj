@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18EA0EAC1B147B760050EA3D /* XSHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA0EAB1B147B760050EA3D /* XSHomePageViewController.m */; };
 		565BBFA23E3257DDBDBAEC02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C663F21CD3E7666A2ED2C5F /* libPods.a */; };
 		AB307BAC1A7C159C00D87905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BAB1A7C159C00D87905 /* main.m */; };
 		AB307BAF1A7C159C00D87905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB307BAE1A7C159C00D87905 /* AppDelegate.m */; };
@@ -17,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18EA0EAA1B147B760050EA3D /* XSHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSHomePageViewController.h; sourceTree = "<group>"; };
+		18EA0EAB1B147B760050EA3D /* XSHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSHomePageViewController.m; sourceTree = "<group>"; };
 		7EFC3FDE31772FE37A4FF9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8C663F21CD3E7666A2ED2C5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB307BA61A7C159C00D87905 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB307BA61A7C159C00D87905 /* TaiPingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiPingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB307BAA1A7C159C00D87905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB307BAB1A7C159C00D87905 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB307BAD1A7C159C00D87905 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,7 +69,7 @@
 		AB307BA71A7C159C00D87905 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB307BA61A7C159C00D87905 /* Example.app */,
+				AB307BA61A7C159C00D87905 /* TaiPingApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +81,8 @@
 				AB307BAE1A7C159C00D87905 /* AppDelegate.m */,
 				AB307BB01A7C159C00D87905 /* ViewController.h */,
 				AB307BB11A7C159C00D87905 /* ViewController.m */,
+				18EA0EAA1B147B760050EA3D /* XSHomePageViewController.h */,
+				18EA0EAB1B147B760050EA3D /* XSHomePageViewController.m */,
 				AB307BB31A7C159C00D87905 /* Main.storyboard */,
 				AB307BB61A7C159C00D87905 /* Images.xcassets */,
 				AB307BB81A7C159C00D87905 /* LaunchScreen.xib */,
@@ -106,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB307BA51A7C159C00D87905 /* Example */ = {
+		AB307BA51A7C159C00D87905 /* TaiPingApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB307BC91A7C159C00D87905 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = AB307BC91A7C159C00D87905 /* Build configuration list for PBXNativeTarget "TaiPingApp" */;
 			buildPhases = (
 				714B394D604E4439BB8CF678 /* Check Pods Manifest.lock */,
 				AB307BA21A7C159C00D87905 /* Sources */,
@@ -120,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = Example;
+			name = TaiPingApp;
 			productName = Example;
-			productReference = AB307BA61A7C159C00D87905 /* Example.app */;
+			productReference = AB307BA61A7C159C00D87905 /* TaiPingApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB307BA11A7C159C00D87905 /* Build configuration list for PBXProject "Example" */;
+			buildConfigurationList = AB307BA11A7C159C00D87905 /* Build configuration list for PBXProject "TaiPingApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -152,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB307BA51A7C159C00D87905 /* Example */,
+				AB307BA51A7C159C00D87905 /* TaiPingApp */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB307BB21A7C159C00D87905 /* ViewController.m in Sources */,
+				18EA0EAC1B147B760050EA3D /* XSHomePageViewController.m in Sources */,
 				AB307BAF1A7C159C00D87905 /* AppDelegate.m in Sources */,
 				AB307BAC1A7C159C00D87905 /* main.m in Sources */,
 			);
@@ -270,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -305,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -321,8 +327,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = TaiPingApp;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,15 +341,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = TaiPingApp;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB307BA11A7C159C00D87905 /* Build configuration list for PBXProject "Example" */ = {
+		AB307BA11A7C159C00D87905 /* Build configuration list for PBXProject "TaiPingApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB307BC71A7C159C00D87905 /* Debug */,
@@ -352,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB307BC91A7C159C00D87905 /* Build configuration list for PBXNativeTarget "Example" */ = {
+		AB307BC91A7C159C00D87905 /* Build configuration list for PBXNativeTarget "TaiPingApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB307BCA1A7C159C00D87905 /* Debug */,

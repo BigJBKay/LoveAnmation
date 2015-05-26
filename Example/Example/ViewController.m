@@ -44,30 +44,30 @@
 
 #pragma mark - SegmentControl
 
-- (IBAction)didChangeMode:(UISegmentedControl *)sender
-{
-    JT3DScrollViewEffect effect;
-    switch (sender.selectedSegmentIndex) {
-            
-        case 0:
-            effect = JT3DScrollViewEffectCards;
-            break;
-        case 1:
-            effect = JT3DScrollViewEffectCarousel;
-            break;
-        case 2:
-            effect = JT3DScrollViewEffectDepth;
-            break;
-        case 3:
-            effect = JT3DScrollViewEffectTranslation;
-            break;
-            
-        default:
-            break;
-    }
-    
-    self.scrollView.effect = effect;
-}
+//- (IBAction)didChangeMode:(UISegmentedControl *)sender
+//{
+//    JT3DScrollViewEffect effect;
+//    switch (sender.selectedSegmentIndex) {
+//            
+//        case 0:
+//            effect = JT3DScrollViewEffectCards;
+//            break;
+//        case 1:
+//            effect = JT3DScrollViewEffectCarousel;
+//            break;
+//        case 2:
+//            effect = JT3DScrollViewEffectDepth;
+//            break;
+//        case 3:
+//            effect = JT3DScrollViewEffectTranslation;
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//    self.scrollView.effect = effect;
+//}
 
 #pragma mark - Next / Previous buttons
 
@@ -80,8 +80,7 @@
     [self.scrollView loadPreviousPage:YES];
 }
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     [self updateButtons];
 }
 

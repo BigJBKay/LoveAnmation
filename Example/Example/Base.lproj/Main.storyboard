@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Guy-tt-gfp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="0PE-VS-n4N">
+            <objects>
+                <viewController id="LF4-a0-Ben" customClass="XSHomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZQG-MM-aZP"/>
+                        <viewControllerLayoutGuide type="bottom" id="TJJ-e0-ULe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKL-Qk-jfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDM-k6-1mA">
+                                <rect key="frame" x="177" y="108" width="247" height="83"/>
+                                <color key="backgroundColor" red="1" green="0.68789275189999999" blue="0.97469521889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="美好时光">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="HEX-hN-wmQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmH-E4-4o2">
+                                <rect key="frame" x="177" y="226" width="247" height="83"/>
+                                <color key="backgroundColor" red="1" green="0.68789275189999999" blue="0.97469521889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki0-F3-eiN">
+                                <rect key="frame" x="177" y="345" width="247" height="83"/>
+                                <color key="backgroundColor" red="1" green="0.68789275189999999" blue="0.97469521889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bDM-k6-1mA" secondAttribute="trailing" constant="30" id="0eI-CD-9YB"/>
+                            <constraint firstItem="bDM-k6-1mA" firstAttribute="leading" secondItem="OKL-Qk-jfZ" secondAttribute="leadingMargin" constant="30" id="L2p-mL-bel"/>
+                            <constraint firstItem="Ki0-F3-eiN" firstAttribute="width" secondItem="OmH-E4-4o2" secondAttribute="width" id="L9T-Zn-esa"/>
+                            <constraint firstItem="Ki0-F3-eiN" firstAttribute="height" secondItem="bDM-k6-1mA" secondAttribute="height" id="NA4-ac-0fL"/>
+                            <constraint firstItem="Ki0-F3-eiN" firstAttribute="width" secondItem="bDM-k6-1mA" secondAttribute="width" id="P64-fO-VKW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OmH-E4-4o2" secondAttribute="trailing" constant="30" id="Zb9-Nw-8M3"/>
+                            <constraint firstItem="Ki0-F3-eiN" firstAttribute="height" secondItem="OmH-E4-4o2" secondAttribute="height" id="kNH-8X-8Pn"/>
+                            <constraint firstItem="Ki0-F3-eiN" firstAttribute="leading" secondItem="OKL-Qk-jfZ" secondAttribute="leadingMargin" constant="30" id="mTu-7r-m4q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ki0-F3-eiN" secondAttribute="trailing" constant="30" id="pbX-3W-6gx"/>
+                            <constraint firstItem="OmH-E4-4o2" firstAttribute="leading" secondItem="OKL-Qk-jfZ" secondAttribute="leadingMargin" constant="30" id="xRM-GU-lJR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1XI-Wp-NMf"/>
+                    <connections>
+                        <outlet property="btn1" destination="bDM-k6-1mA" id="CAD-kO-e4M"/>
+                        <outlet property="btn2" destination="OmH-E4-4o2" id="cb0-lR-7fQ"/>
+                        <outlet property="btn3" destination="Ki0-F3-eiN" id="mn4-EQ-Bji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvT-R9-Sdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="294"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -48,29 +112,11 @@
                                     <action selector="loadPreviousPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HrA-nQ-v3P"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1it-iz-B0h">
-                                <rect key="frame" x="10" y="22" width="580" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="h1L-BJ-m3D"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Cards"/>
-                                    <segment title="Carousel"/>
-                                    <segment title="Depth"/>
-                                    <segment title="Translation"/>
-                                </segments>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="didChangeMode:" destination="vXZ-lx-hvc" eventType="valueChanged" id="R2P-zL-M1d"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.21176470588235294" green="0.32941176470588235" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1it-iz-B0h" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="22" id="4kd-vq-1S0"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Xgq-k9-Wfo" secondAttribute="bottom" constant="20" id="7j1-Si-zs6"/>
                             <constraint firstItem="Xgq-k9-Wfo" firstAttribute="width" secondItem="MGh-GG-gK5" secondAttribute="width" id="9Xn-rE-lR3"/>
-                            <constraint firstItem="1it-iz-B0h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="CXb-lc-SQ2"/>
                             <constraint firstItem="6eA-6K-WkJ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="80" id="DXx-wZ-Lq7"/>
                             <constraint firstAttribute="trailing" secondItem="MGh-GG-gK5" secondAttribute="trailing" constant="20" id="Edl-k2-I2B"/>
                             <constraint firstItem="Xgq-k9-Wfo" firstAttribute="leading" secondItem="MGh-GG-gK5" secondAttribute="leading" constant="40" id="FZK-Oe-zQB"/>
@@ -80,7 +126,6 @@
                             <constraint firstItem="Xgq-k9-Wfo" firstAttribute="trailing" secondItem="MGh-GG-gK5" secondAttribute="trailing" constant="40" id="c2q-Bz-M4d"/>
                             <constraint firstItem="Xgq-k9-Wfo" firstAttribute="leading" secondItem="MGh-GG-gK5" secondAttribute="trailing" constant="120" id="cBS-Qa-zcd"/>
                             <constraint firstItem="MGh-GG-gK5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="crC-qE-tgT"/>
-                            <constraint firstAttribute="trailing" secondItem="1it-iz-B0h" secondAttribute="trailing" constant="10" id="eck-JR-kD0"/>
                             <constraint firstItem="6eA-6K-WkJ" firstAttribute="width" secondItem="MGh-GG-gK5" secondAttribute="width" id="gNz-6h-2jh"/>
                             <constraint firstItem="Xgq-k9-Wfo" firstAttribute="trailing" secondItem="MGh-GG-gK5" secondAttribute="trailing" constant="40" id="iLE-Ah-4aj"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6eA-6K-WkJ" secondAttribute="bottom" constant="80" id="ukN-EF-KXd"/>
@@ -94,6 +139,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="heD-qm-7V1"/>
                     <connections>
                         <outlet property="leftNextButtonConstraint" destination="crC-qE-tgT" id="rRe-Wt-Kef"/>
                         <outlet property="nextButton" destination="MGh-GG-gK5" id="jB5-eO-8z5"/>
@@ -103,6 +149,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="496" y="230"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cjo-76-amT">
+            <objects>
+                <navigationController id="Guy-tt-gfp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Taj-1G-cIS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LF4-a0-Ben" kind="relationship" relationship="rootViewController" id="zMT-b0-6A4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Int-zy-K4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1077" y="214"/>
         </scene>
     </scenes>
 </document>
