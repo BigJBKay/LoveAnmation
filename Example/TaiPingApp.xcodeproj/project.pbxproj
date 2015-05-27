@@ -20,6 +20,9 @@
 /* Begin PBXFileReference section */
 		18EA0EAA1B147B760050EA3D /* XSHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSHomePageViewController.h; sourceTree = "<group>"; };
 		18EA0EAB1B147B760050EA3D /* XSHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSHomePageViewController.m; sourceTree = "<group>"; };
+		18ECB0221B155B4400D100D6 /* TaiPingApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaiPingApp-Prefix.pch"; sourceTree = "<group>"; };
+		18ECB0231B15632A00D100D6 /* MyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyConfig.h; sourceTree = "<group>"; };
+		18ECB0241B15634900D100D6 /* URLConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLConfig.h; sourceTree = "<group>"; };
 		7EFC3FDE31772FE37A4FF9BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8C663F21CD3E7666A2ED2C5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB307BA61A7C159C00D87905 /* TaiPingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaiPingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +99,9 @@
 			children = (
 				AB307BAA1A7C159C00D87905 /* Info.plist */,
 				AB307BAB1A7C159C00D87905 /* main.m */,
+				18ECB0221B155B4400D100D6 /* TaiPingApp-Prefix.pch */,
+				18ECB0231B15632A00D100D6 /* MyConfig.h */,
+				18ECB0241B15634900D100D6 /* URLConfig.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Example/TaiPingApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -305,6 +313,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Example/TaiPingApp-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

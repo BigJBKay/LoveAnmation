@@ -12,6 +12,7 @@
 {
     [super viewDidAppear:animated];
     
+    self.view.layer.masksToBounds = YES;
     self.scrollView.effect = JT3DScrollViewEffectCards;
     
     self.scrollView.delegate = self; // Use only for animate nextButton and previousButton
@@ -21,9 +22,7 @@
     [self createCardWithColor];
     [self createCardWithColor];
     
-    self.nextButton.backgroundColor = [UIColor colorWithRed:33/255. green:158/255. blue:238/255. alpha:1.];
-    self.nextButton.layer.cornerRadius = 5.;
-    self.previousButton.layer.cornerRadius = 5.;
+
 }
 
 - (void)createCardWithColor
@@ -71,14 +70,8 @@
 
 #pragma mark - Next / Previous buttons
 
-- (IBAction)loadNextPage:(id)sender {
-    [self.scrollView loadNextPage:YES];
-}
 
-- (IBAction)loadPreviousPage:(id)sender
-{
-    [self.scrollView loadPreviousPage:YES];
-}
+
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     [self updateButtons];

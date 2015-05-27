@@ -1,0 +1,19 @@
+//
+//  TaiPingApp-Prefix.pch
+//  TaiPingApp
+//
+//  Created by apple on 15/5/27.
+//  Copyright (c) 2015年 Jonathan Tribouharet. All rights reserved.
+//
+
+#ifndef TaiPingApp_TaiPingApp_Prefix_pch
+#define TaiPingApp_TaiPingApp_Prefix_pch
+
+#ifdef __OBJC__
+
+#import "MyConfig.h"
+#import "URLConfig.h"
+
+#endif
+
+#endif
