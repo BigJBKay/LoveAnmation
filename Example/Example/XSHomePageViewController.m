@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
 @property (weak, nonatomic) IBOutlet UIButton *btn3;
 @property (nonatomic,strong) NSArray *btns;
+@property (nonatomic,strong) UIImageView *bgView;
 
 @end
 
@@ -117,37 +118,7 @@
 //                                  [self addBgAnimation];
 //                              }];
     
-    [UIView animateKeyframesWithDuration:10.f
-                                   delay:0.0
-                                 options:UIViewKeyframeAnimationOptionCalculationModeLinear
-                              animations:^{
-                                  
-                                  [UIView addKeyframeWithRelativeStartTime:0.0   // 相对于6秒所开始的时间（第0秒开始动画）
-                                                          relativeDuration:1/3.0 // 相对于6秒动画的持续时间（动画持续2秒）
-                                                                animations:^{
-                                                                    self.view.backgroundColor = [UIColor blueColor];
-                                                                    self.view.alpha = 0.5;
-                                                                }];
-                                  
-                                  
-                                  [UIView addKeyframeWithRelativeStartTime:1/3.0 // 相对于6秒所开始的时间（第2秒开始动画）
-                                                          relativeDuration:1/3.0 // 相对于6秒动画的持续时间（动画持续2秒）
-                                                                animations:^{
-                                                                    self.view.backgroundColor = [UIColor yellowColor];
-                                                                    self.view.alpha = 0.8;
-                                                                }];
-                                  
-                                  [UIView addKeyframeWithRelativeStartTime:2/3.0 // 相对于6秒所开始的时间（第4秒开始动画）
-                                                          relativeDuration:1/3.0 // 相对于6秒动画的持续时间（动画持续2秒）
-                                                                animations:^{
-                                                                    self.view.backgroundColor = [UIColor greenColor];
-                                                                    self.view.alpha = 0.5;
-                                                                }];
-                                  
-                              }
-                              completion:^(BOOL finished) {
-                                  [self addBgAnimation];
-                              }];
+
     
 }
 -(void)ballMoveAllTimeAnimation {
