@@ -149,9 +149,9 @@
                                   [self addBgAnimation];
                               }];
     
-    
 }
--(void)ballMoveAllTimeAnimation{
+-(void)ballMoveAllTimeAnimation {
+    
     
 }
 
